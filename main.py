@@ -1,12 +1,9 @@
-from Engin_motorise import Engin_motorise
-from Moto import Moto
-from Voiture import Voiture
+from Salade_composee import Salade_composee
+from Tomate import Tomate
+from Laitue import Laitue
 
-engin_motorise = Engin_motorise("Beko")
-print(engin_motorise.presenter())
+tomate = Tomate(12, "rouge")
+laitue = Laitue(13)
+salade_composee = Salade_composee(tomate, laitue)
 
-voiture = Voiture("Renault", 5)
-print(voiture.presenter())
-
-moto = Moto("Honda", "essence")
-print(moto.presenter())
+salade_composee.afficher_couleur_tomate()
