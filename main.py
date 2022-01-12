@@ -1,9 +1,9 @@
-from Salade_composee import Salade_composee
-from Tomate import Tomate
-from Laitue import Laitue
+from Conducteur import Conducteur
+from Voiture import Voiture
+from moteur import Moteur
 
-tomate = Tomate(12, "rouge")
-laitue = Laitue(13)
-salade_composee = Salade_composee(tomate, laitue)
+moteur = Moteur(150, "électricité")
+voiture = Voiture("rouge", "tesla", moteur)
+thomas = Conducteur(25, "thomas", voiture)
 
-salade_composee.afficher_couleur_tomate()
+print(thomas)
